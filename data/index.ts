@@ -121,7 +121,7 @@ export const testimonials = [
     quote:
       "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abdallahis the ideal partner.",
     name: "Michael Johnson",
-    title: "e",
+    title: "Someone on the future",
   },
   {
     quote:
@@ -133,7 +133,7 @@ export const testimonials = [
     quote:
       "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abdallahis the ideal partner.",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "Someone on the future",
   },
 ];
 
