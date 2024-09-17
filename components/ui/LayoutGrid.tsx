@@ -92,7 +92,10 @@ const BlurImage = ({ card }: { card: Card }) => {
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
-    />
+      style={{
+        maxWidth: "100%",
+        height: "auto"
+      }} />
   );
 };
 

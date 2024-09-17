@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
+import Image from "next/image"; 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -91,26 +92,35 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
-              alt={img}
+              alt="Project image"
               className={cn(imgClassName, "object-cover object-center")}
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
-          } `}
+          }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
-              alt={spareImg}
-              className="object-cover object-center w-full h-full"
-            />
+              alt="Spare image"
+              className="w-full h-full object-cover object-center"
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           )}
         </div>
+
         {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
@@ -143,10 +153,10 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
@@ -158,6 +168,7 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
+
           {id === 6 && (
             <div className="mt-5 relative">
               <div
