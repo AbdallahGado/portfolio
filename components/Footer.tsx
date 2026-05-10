@@ -1,9 +1,14 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
-import { socialMedia } from "@/data";
+import { socialMedia } from "@/constants";
 import MagicButton from "./MagicButton";
+import { useTheme } from "next-themes";
 
 const Footer = () => {
+  const { theme, setTheme } = useTheme();
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="flex flex-col items-center">

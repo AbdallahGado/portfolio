@@ -1,10 +1,3 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
-
 export const gridItems = [
   {
     id: 1,
@@ -46,7 +39,6 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
     title: "Currently building a JS Animation library",
@@ -89,7 +81,7 @@ export const projects = [
   {
     id: 3,
     title: "FAQ Page",
-    des: "A simple FAQ page built with React next.jsand Tailwind CSS.",
+    des: "A simple FAQ page built with React, Next.js, and Tailwind CSS.",
     img: "/FAQ.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/AbdallahGado",
@@ -113,27 +105,15 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident thbdallahout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your bdallah'sAbdallah is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Someone on the future",
+      "Abdallah brought our vision to life with incredible attention to detail. His technical expertise and creative problem-solving made the entire development process smooth and enjoyable. The final product exceeded our expectations in every way.",
+    name: "Sarah Williams",
+    title: "Project Manager",
   },
   {
     quote:
-      "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abdallahis the ideal partner.",
-    name: "Michael Johnson",
-    title: "Someone on the future",
-  },
-  {
-    quote:
-      "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abdallahis the ideal partner.",
-    name: "Michael Johnson",
-    title: "Someone on the future",
-  },
-  {
-    quote:
-      "Collaborating with Abdallah was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abdallah's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abdallahis the ideal partner.",
-    name: "Michael Johnson",
-    title: "Someone on the future",
+      "Working with Abdallah was a game-changer for our online presence. He delivered a modern, responsive website that perfectly represents our brand. His communication was excellent throughout the entire project.",
+    name: "Ahmed Hassan",
+    title: "Startup Founder",
   },
 ];
 
@@ -173,15 +153,14 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer ",
+    title: "Frontend Engineer",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-
   {
-    id: 3,
-    title: "Freelance ",
+    id: 2,
+    title: "Freelance Developer",
     desc: "Led the dev of a web app for a client, from initial concept to deployment on server.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
@@ -201,7 +180,7 @@ export const socialMedia = [
   },
   {
     id: 3,
-    img: "link.svg",
+    img: "/link.svg",
     link: "https://www.linkedin.com/in/abdallah-gado-0ab60b234",
   },
 ];

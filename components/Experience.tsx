@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { workExperience } from "@/data";
+import { workExperience } from "@/constants";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {

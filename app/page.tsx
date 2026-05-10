@@ -1,28 +1,25 @@
 "use client";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { navItems } from "@/data";
-import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
-import Footer from "@/components/Footer";
-import Clients from "@/components/Clients";
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+import { navItems } from "@/constants";
+import { FloatingNav } from "@/components/ui/navigation/FloatingNav";
+import { HeroSection } from "@/features/Hero/HeroSection";
+import { AboutSection } from "@/features/About/AboutSection";
+import { ProjectsSection } from "@/features/Projects/ProjectsSection";
+import { ExperienceSection } from "@/features/Experience/ExperienceSection";
+import { GitHubActivity } from "@/features/GitHubActivity/GitHubActivity";
+import { ContactSection } from "@/features/Contact/ContactSection";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
+    <main className="relative bg-background flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-        <SpeedInsights />
         <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience />
-        <Approach />
-        <Footer />
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <GitHubActivity />
+        <ContactSection />
       </div>
     </main>
   );
